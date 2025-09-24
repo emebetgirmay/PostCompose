@@ -13,6 +13,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.postscompose.screens.AppNavigation
 import com.example.postscompose.screens.PostsScreen
 import com.example.postscompose.ui.theme.PostsComposeTheme
 
@@ -22,8 +23,8 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             PostsComposeTheme {
-               Surface(modifier = Modifier.fillMaxSize().safeContentPadding()) {
-                   PostsScreen()
+                Surface(modifier = Modifier.fillMaxSize().safeContentPadding()) {
+                    AppNavigation()
                }
             }
         }
